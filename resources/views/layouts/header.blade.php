@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Extreme</title>
-
 </head>
 <body>   
 <!--header-->
@@ -24,12 +23,13 @@
             <li><a href="#" rel="sponsored" class="external">External URL</a></li>
           </ul>
         </li>
-        <li><a href="#section4">Courses</a></li>
-        <!-- <li><a href="#section5">Video</a></li> -->
+        <li><a href="{{ url('/courses') }}">Courses</a></li>
+        
+ <!-- Updated to link to course.blade.php -->
         <li><a href="#section6">Contact</a></li>
         <li><a href="#" class="external">External</a></li>
       </ul>
     </nav>
   </header>
 </body>
-</html>
+</html>  
