@@ -1,0 +1,100 @@
+/* Overlay styling */
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    z-index: 1000;
+}
+
+/* Popup container */
+#videoPopup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 900px;
+    width: 100%;
+    z-index: 1001;
+    display: none;
+}
+
+/* Video container */
+#videoContainer {
+    position: relative;
+}
+
+/* Video styling */
+#popupVideo {
+    width: 100%;
+    height: auto;
+    border: none; /* Removed bezels */
+}
+
+/* Lock overlay */
+#lockOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+}
+
+/* Increase the size of the lock icon */
+#lockIcon {
+    font-size: 60px; /* Larger size for the lock icon */
+    color: white; /* Make sure the icon is visible */
+}
+
+/* Button styling */
+#continueBtn {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    display: none; /* Initially hidden */
+    animation: blink 1.5s infinite;
+}
+
+#continueBtn:hover {
+    background: #0056b3;
+}
+
+/* Animations */
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+
+/* Cross btn */
+
+/* Close Button Styling */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    z-index: 1002; /* Ensure it's above the video */
+}
+
+/* Close button hover effect */
+.close-btn:hover {
+    color: #ff0000; /* Red color on hover */
+    font-size: 32px;
+}
